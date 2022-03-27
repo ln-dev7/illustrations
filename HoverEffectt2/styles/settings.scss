@@ -1,0 +1,36 @@
+// Google font
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Poppins:wght@300&display=swap');
+
+// Couleurs
+$dark: #000;
+$primary: #e9e8e2;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: $primary;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

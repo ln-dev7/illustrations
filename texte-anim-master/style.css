@@ -1,0 +1,41 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    padding-top: 50px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.titre-1 {
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 1;
+    -webkit-text-stroke: 2px #222;
+    opacity: 0.9;
+    color: transparent;
+    margin-left: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, transparent 50%, black 50% );
+    transition: background-position ease-out 0.4s;
+    background-size: 1% 200%;
+}
+.titre-1:hover {
+    background-position: 0 -100%;
+}
