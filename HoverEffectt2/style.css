@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #20222c;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: #eef4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.container .content {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 0;
+  border-radius: 50px;
+  background: #20222c;
+  z-index: -1;
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+}
+.container .circle {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .circle .line {
+  width: 30px;
+  height: 4px;
+  opacity: 0;
+  background: #fff;
+  transition: 0.5s ease-in-out;
+  transition-delay: -0.2s;
+}
+.container .circle img {
+  position: absolute;
+  width: 50px;
+  transition: 0.4s ease-in-out;
+}
+.container h2 {
+  transition: color 0.5s ease-in-out;
+  font-weight: 800;
+  padding: 0 50px 0 20px;
+}
+.container:hover .content {
+  width: 100%;
+}
+.container:hover .circle {
+  width: 75px;
+  height: 75px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container:hover .circle .line {
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  transform: translateX(20px);
+}
+.container:hover .circle img {
+  width: 50px;
+  transform: translateX(30px);
+}
+.container:hover h2 {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
